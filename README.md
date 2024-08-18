@@ -27,6 +27,12 @@ A aplicação oferece as seguintes funcionalidades para os modelos Produto, Pedi
 
 ### Passo 1: Clone o Repositório
 
-```bash
+```sh
 git clone https://github.com/lucasbattistipiva/gerenciamento_de_produtos_farmac-uticos.git
 cd gerenciamento_de_produtos_farmac-uticos
+```
+### Passo 2: Instale as dependências
+
+Abra o terminal dentro do arquivo BACK-END e insira:
+```sh
+npm i
