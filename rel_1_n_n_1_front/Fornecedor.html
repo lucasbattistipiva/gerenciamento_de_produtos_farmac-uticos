@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Fornecedores</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Fornecedor.js" defer></script>
+</head>
+<body>
+    <h1>Gerenciamento de Fornecedores</h1>
+
+    <section>
+        <h2>Cadastrar Fornecedor</h2>
+        <div >
+            <input type="text" id="nomeFornecedor" placeholder="Nome do Fornecedor" required>
+            <input type="text" id="cnpj" placeholder="CNPJ" required>
+            <button id="formFornecedor">Cadastrar Fornecedores</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Atualizar Fornecedor</h2>
+        <div >
+            <input type="number" id="codFornecedorUpdate" placeholder="Código do Fornecedor" required>
+            <input type="text" id="nomeFornecedorUpdate" placeholder="Novo Nome do Fornecedor" required>
+            <input type="text" id="cnpjUpdate" placeholder="Nova Quantidade" required>
+            <button id="form-atualizar">Atualizar</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Listar Fornecedores</h2>
+        <button id="listarFornecedores">Listar Todos os Fornecedores</button>
+        <ul id="listaFornecedores"></ul>
+    </section>
+
+    <section>
+        <h2>Consultar Fornecedor</h2>
+        <input type="text" id="consultaNomeFornecedor" placeholder="Nome do Fornecedor">
+        <button id="consultarFornecedor">Consultar Fornecedor</button>
+        <p id="resultadoConsulta"></p>
+    </section>
+
+    <section>
+        <h2>Deletar Fornecedor</h2>
+        <input type="number" id="fornecedorIdDeletar" placeholder="ID do Fornecedor">
+        <button id="deletarFornecedor">Deletar Fornecedor</button>
+        <p id="resultadoDeletar"></p>
+    </section>
+
+    
+</body>
+</html>

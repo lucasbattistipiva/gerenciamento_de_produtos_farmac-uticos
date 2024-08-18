@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Produtos e Pedidos</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Produto.js" defer></script>
+</head>
+
+<body>
+    <h1>Gerenciamento de Produtos e Pedidos</h1>
+
+    <section>
+        <h2>Cadastrar Produto</h2>
+        <div>
+            <input type="text" id="nomeProd" placeholder="Nome do Produto" required>
+            <input type="number" id="quantidade" placeholder="Quantidade" required>
+            <input type="number" id="preco" placeholder="Preço" required>
+            <button id="formProduto">Cadastrar Produto</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Atualizar Produto</h2>
+        <div >
+            <input type="number" id="codProdutoUpdate" placeholder="Código do Produto" required>
+            <input type="text" id="nomeProdUpdate" placeholder="Novo Nome do Produto" required>
+            <input type="number" id="quantidadeUpdate" placeholder="Nova Quantidade" required>
+            <input type="number" step="0.01" id="precoUpdate" placeholder="Novo Preço" required>
+            <button id="form-atualizar">Atualizar</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Listar Produtos</h2>
+        <button id="listarProdutos">Listar Todos os Produtos</button>
+        <ul id="listaProdutos"></ul>
+    </section>
+
+    <section>
+        <h2>Consultar Produto</h2>
+        <input type="text" id="consultaNomeProduto" placeholder="Nome do Produto">
+        <button id="consultarProduto">Consultar Produto</button>
+        <p id="resultadoConsulta"></p>
+    </section>
+
+    <section>
+        <h2>Deletar Produto</h2>
+        <input type="number" id="produtoIdDeletar" placeholder="ID do Produto">
+        <button id="deletarProduto">Deletar Produto</button>
+        <p id="resultadoDeletar"></p>
+    </section>
+
+
+</body>
+
+</html>

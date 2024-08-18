@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Pedidos/Compras</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="PedidoCompra.js" defer></script>
+</head>
+<body>
+    <h1>Gerenciamento de Pedidos/Compras</h1>
+
+    <section>
+        <h2>Cadastrar Pedido</h2>
+        <div >
+            <input type="text" id="data" placeholder="Data do Pedido" required>
+            <input type="text" id="nomePed" placeholder="Nome do Pedido" required>
+            <input type="text" id="nomeFornecedor" placeholder="Nome do Fornecedor" required>
+            <input type="text" id="quantidadeProd" placeholder="Quantidade do Produto" required>
+            <input type="text" id="fornecedorId" placeholder="ID do Fornecedor" required>
+            <input type="text" id="produtoId" placeholder="ID do Produto" required>
+            <button id="formPedido">Cadastrar Pedido</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Atualizar Pedido</h2>
+        <div >
+            <input type="text" id="codPedidoUpdate" placeholder="ID do Pedido" required>
+            <input type="text" id="dataUpdate" placeholder="Data do Pedido" required>
+            <input type="text" id="nomePedUpdate" placeholder="Nome do Pedido" required>
+            <input type="text" id="nomeFornUpdate" placeholder="Nome do Fornecedor" required>
+            <input type="text" id="quantidadeProdUpdate" placeholder="Quantidade do Produto" required>
+            <input type="text" id="fornecedorIdUpdate" placeholder="ID do Fornecedor" required>
+            <input type="text" id="produtoIdUpdate" placeholder="ID do Produto" required>
+            <button id="form-atualizar">Atualizar Pedido</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Listar Pedido</h2>
+        <button id="listarPedidos">Listar Todos os Pedidos</button>
+        <ul id="listaPedidos"></ul>
+    </section>
+
+    <section>
+        <h2>Consultar Pedido</h2>
+        <input type="text" id="consultaCodPedido" placeholder="ID do Pedido">
+        <button id="consultarPedido">Consultar Pedido</button>
+        <p id="resultadoConsulta"></p>
+    </section>
+
+    <section>
+        <h2>Deletar Pedido</h2>
+        <input type="number" id="pedidoIdDeletar" placeholder="ID do Pedido">
+        <button id="deletarPedido">Deletar Pedido</button>
+        <p id="resultadoDeletar"></p>
+    </section>
+
+    
+</body>
+</html>
