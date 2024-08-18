@@ -36,3 +36,14 @@ cd gerenciamento_de_produtos_farmac-uticos
 Abra o terminal dentro do arquivo BACK-END e insira:
 ```sh
 npm i
+```
+
+### Passo 3: Sync com o db para criar as tables já com a associação
+```sh
+node sync.js
+```
+### Passo 3: Execute e Aproveite!
+```sh
+node index.js
+```
+
